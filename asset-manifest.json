@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/retush_new/static/css/main.f6ccc5c3.chunk.css",
+    "main.js": "/retush_new/static/js/main.3c70a460.chunk.js",
+    "main.js.map": "/retush_new/static/js/main.3c70a460.chunk.js.map",
+    "runtime-main.js": "/retush_new/static/js/runtime-main.459e56ce.js",
+    "runtime-main.js.map": "/retush_new/static/js/runtime-main.459e56ce.js.map",
+    "static/js/2.dccdd033.chunk.js": "/retush_new/static/js/2.dccdd033.chunk.js",
+    "static/js/2.dccdd033.chunk.js.map": "/retush_new/static/js/2.dccdd033.chunk.js.map",
+    "index.html": "/retush_new/index.html",
+    "precache-manifest.ae695d788af70ba3b2ead013ab0a25d6.js": "/retush_new/precache-manifest.ae695d788af70ba3b2ead013ab0a25d6.js",
+    "service-worker.js": "/retush_new/service-worker.js",
+    "static/css/main.f6ccc5c3.chunk.css.map": "/retush_new/static/css/main.f6ccc5c3.chunk.css.map",
+    "static/js/2.dccdd033.chunk.js.LICENSE.txt": "/retush_new/static/js/2.dccdd033.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/retush_new/static/media/texture.dbeaf4ea.jpg",
+    "static/media/example1a.jpg": "/retush_new/static/media/example1a.1d000984.jpg",
+    "static/media/example1b.jpg": "/retush_new/static/media/example1b.916b130a.jpg",
+    "static/media/logo.svg": "/retush_new/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.459e56ce.js",
+    "static/js/2.dccdd033.chunk.js",
+    "static/css/main.f6ccc5c3.chunk.css",
+    "static/js/main.3c70a460.chunk.js"
+  ]
+}
