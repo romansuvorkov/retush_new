@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main_header {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(./img/bkg.jpg);
+  background-size: 100% auto;
+}
+
+.visit_card {
+  position: relative;
+  width: 220px;
+  height: 120px;
+  padding: 10px 15px 15px 10px;
+  margin-top: 40px;
+  border-radius: 2px;
+  background: url(./img/texture.jpg);
+  background-size: cover;
+  box-shadow: 
+  /* top shadow */
+  0px -10px 10px rgba(0,0,0,0.2),
+  /* bottom shadow */
+  0px 10px 20px rgba(0,0,0,0.4),
+  /* left shadow */
+  -10px 0px 20px rgba(0,0,0,0.4),
+  /*right shadow */
+  10px 0px 20px rgba(0,0,0,0.4),
+  /* inner shadow */
+  inset 1px 1px 20px rgba(0,0,0,0.4)
+  ;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  background: url(./img/gold-texture.jpg);
+  background-size: cover;
+  mask: url(./img/logo.png);
+  -webkit-mask: url(./img/logo.png);
+}
+
+.card_title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  color: transparent;
+  background: url(./img/gold-texture.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.back .card_title {
+  font-size: 14px;
+  word-spacing: 3px;
+  background:url(./img/silver-texture.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+
+.card_text {
+  font-size: 12px;
+  background:url(./img/gold-texture.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+
+.visit_card.back .right {
+  position: absolute;
+  width: 200px;
+  right: 10px;
+  bottom: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  color: transparent;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background:url(./img/silver-texture.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+
+.visit_card.back .left {
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  color:transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.visit_card.front {
+  transform: rotateZ(-7deg);
+  left: -5%;
+}
+
+.visit_card.back {
+  transform: rotateZ(4deg);
+  left: 5%;
+  top: -2%;
+}
+
+.info_cards {
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(rgba(124, 124, 124, 0.6), rgba(0, 0, 0, 0.8));
+  position: relative;
+}
+
+.info_cards_wrapper {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: -50%;
+}
+
+.info_card {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  background: url(./img/texture.jpg);
+  background-size: cover;
+  box-shadow: 
+  /* top shadow */
+  0px -10px 10px rgba(0,0,0,0.2),
+  /* bottom shadow */
+  0px 10px 20px rgba(0,0,0,0.4),
+  /* left shadow */
+  -10px 0px 20px rgba(0,0,0,0.4),
+  /*right shadow */
+  10px 0px 20px rgba(0,0,0,0.4),
+  /* inner shadow */
+  inset 1px 1px 20px rgba(0,0,0,0.4)
+  ;
+  border-radius: 2px;
+  justify-content: center;
+}
+
+.info_card .right {
+  right: 10px;
+  bottom: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  color: transparent;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background:url(./img/silver-texture.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+
+/* Слайдер */
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slider_container {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider_card {
+  display: flex;
+  height: 150px;
+  width: 100px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.slider_card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.slider_img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider_card_active {
+  transition: 0.6s ease-out;
+  height: 280px;
+  width: 220px;
+  transform: translateY(30vh);
+}
+
+.slider_card:first-child.slider_card_active {
+  transform: translateY(30vh) translateX(30%);
+}
+
+.slider_card:last-child.slider_card_active {
+  transform: translateY(30vh) translateX(-30%);
+}
