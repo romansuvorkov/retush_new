@@ -167,7 +167,7 @@
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: -50%;
+  top: -60%;
 }
 
 .info_card {
@@ -258,3 +258,4 @@ body {
 .slider_card:last-child.slider_card_active {
   transform: translateY(30vh) translateX(-30%);
 }
+
