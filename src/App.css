@@ -73,7 +73,6 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -259,3 +258,103 @@ body {
   transform: translateY(30vh) translateX(-30%);
 }
 
+.how_to_wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/how-to-background.jpg);
+  background-size: contain;
+  position: relative;
+}
+
+.how_to_card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+/*   background-color: red; */
+  box-shadow: 
+  /* top shadow */
+  0px -10px 10px rgba(0,0,0,0.2),
+  0px -10px 10px rgba(0,0,0,0.2),
+  /* bottom shadow */
+  0px 10px 20px rgba(0,0,0,0.4),
+  0px 10px 20px rgba(0,0,0,0.4),
+  /* left shadow */
+  -10px 0px 20px rgba(0,0,0,0.4),
+  -10px 0px 20px rgba(0,0,0,0.4),
+  /*right shadow */
+  10px 0px 20px rgba(0,0,0,0.4),
+  10px 0px 20px rgba(0,0,0,0.4),
+  /* inner shadow */
+  inset 2px 2px 20px rgba(0,0,0,0.4),
+  inset 2px 2px 20px rgba(0,0,0,0.4)
+  ;
+  animation-duration: 2s;
+  animation-name: appear;
+}
+
+.text {
+  position: absolute;
+  width: 80%;
+  left: 15px;
+  top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(167, 167, 167);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background:url(https://i.imgur.com/fjrLe36.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+
+.invisible {
+  display: none;
+}
+
+.active_slide {
+  display: block;
+}
+
+.how_to_left {
+  width: 10%;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: white;
+  text-align: center;
+  align-content: center;
+  padding-top: 50vh;
+  box-sizing: border-box;
+}
+
+.how_to_right {
+  /* border: 1px solid green; */
+  width: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 50vh;
+  box-sizing: border-box;
+}
+
+.display_none {
+  display: none;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}

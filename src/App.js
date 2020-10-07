@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import InfoCards from './components/InfoCards';
 import Slider from './components/Slider';
+import HowTo from './components/HowTo';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <InfoCards />
       <Slider />
+      <HowTo />
     </>
   );
 }
