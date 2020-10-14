@@ -372,8 +372,8 @@ body {
 }
 
 .example_show {
-  width: 50%;
-  height: 100%;
+  width: 60%;
+  height: 80%;
   position: relative;
   overflow: hidden;
   margin-left: auto;
@@ -382,20 +382,20 @@ body {
 }
 
 .example_img {
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   display: block;
 }
 
-.before_img {
+/* .before_img {
   clip: rect(auto, 0px, auto, 0px)
-}
+} */
 
-.after_img {
+/* .after_img {
   clip: rect(auto, 0px, auto, 0px)
-}
+} */
 
 .ex_show_interface {
   height: 38px;

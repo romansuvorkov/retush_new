@@ -14,15 +14,7 @@ function Examples() {
     const [activeMoving, setActiveMoving] = useState(false);
     const [interfacePosition, setInterfacePosition] = useState("50%");
 
-    const testCoord = (e) => {
-        // let testX = e.clientX;
-        // console.log(testX);
-        let x = e.target.getBoundingClientRect();
-        console.log(x);
-    }
-
     const handeMouseDown = (e) => {
-        
         setActiveMoving(true);
     }
 
