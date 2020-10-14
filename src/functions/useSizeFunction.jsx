@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 export default function useSizeFunction(myRef) {
     const getDimensions = () => ({
       width: myRef.current.offsetWidth,
-      height: myRef.current.offsetHeight
+      height: myRef.current.offsetHeight,
     })
 
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0});
   
     useEffect(() => {
       const handleResize = () => {
@@ -18,13 +18,12 @@ export default function useSizeFunction(myRef) {
       }
   
       window.addEventListener("resize", handleResize);
+      console.log('work123123');
   
       return () => {
         window.removeEventListener("resize", handleResize);
       }
     }, [myRef])
-
-    console.log('work');
   
     return dimensions;
 };

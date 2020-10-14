@@ -373,7 +373,7 @@ body {
 
 .example_show {
   width: 60%;
-  height: 80%;
+  height: 90%;
   position: relative;
   overflow: hidden;
   margin-left: auto;
@@ -411,6 +411,7 @@ body {
   border-radius: 1000px;
   z-index: 40;
   cursor: pointer;
+  
 }
 
 .ex_show_interface::before {
