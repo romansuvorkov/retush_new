@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import example1b from '../img/example1b.jpg';
 import example1a from '../img/example1a.jpg';
 import ExampleImage from './ExampleImage';
+import ExampleImageNew from './ExampleImageNew';
 
 function Examples() {
 
@@ -48,7 +49,7 @@ function Examples() {
                     <span className="right_arrow"></span>
                 </div>
             </div> */}
-            <ExampleImage />
+            <ExampleImageNew />
         </div>    
     </div>
 

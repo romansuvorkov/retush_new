@@ -411,7 +411,7 @@ body {
   border-radius: 1000px;
   z-index: 40;
   cursor: pointer;
-  
+  transition: all 0.2s ease-out;
 }
 
 .ex_show_interface::before {
@@ -442,6 +442,22 @@ body {
   z-index: 30;
 }
 
+.example_back {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+.example_front {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-out;
+}
 

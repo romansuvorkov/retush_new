@@ -9,9 +9,9 @@ import './App.css';
 function App() {
   return (
     <>
-      <Header />
-      <InfoCards />
-      <Slider />
+      {/* <Header /> */}
+      {/* <InfoCards /> */}
+      {/* <Slider /> */}
       <HowTo />
       <Examples />
     </>
