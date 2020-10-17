@@ -18,12 +18,14 @@ export default function useSizeFunction(myRef) {
       }
   
       window.addEventListener("resize", handleResize);
-      console.log('work123123');
+      // console.log('work123123');
   
       return () => {
         window.removeEventListener("resize", handleResize);
       }
-    }, [myRef])
-  
+    }, 
+    [myRef]
+    )
+    // console.log('working');
     return dimensions;
 };

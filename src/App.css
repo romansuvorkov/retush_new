@@ -389,59 +389,6 @@ body {
   display: block;
 }
 
-/* .before_img {
-  clip: rect(auto, 0px, auto, 0px)
-} */
-
-/* .after_img {
-  clip: rect(auto, 0px, auto, 0px)
-} */
-
-.ex_show_interface {
-  height: 38px;
-  width: 38px;
-  position: absolute;
-  /* left: 50%; */
-  top: 50%;
-  margin-left: -22px;
-  margin-top: -22px;
-  border: 3px solid #fff;
-  -webkit-border-radius: 1000px;
-  -moz-border-radius: 1000px;
-  border-radius: 1000px;
-  z-index: 40;
-  cursor: pointer;
-  transition: all 0.2s ease-out;
-}
-
-.ex_show_interface::before {
-  bottom: 50%;
-  margin-bottom: 22px;
-  width: 3px;
-  height: 9999px;
-  left: 50%;
-  margin-left: -1.5px;
-  content: " ";
-  display: block;
-  background: #fff;
-  position: absolute;
-  z-index: 30;
-}
-
-.ex_show_interface::after {
-  top: 50%;
-  margin-top: 22px;
-  width: 3px;
-  height: 9999px;
-  left: 50%;
-  margin-left: -1.5px;
-  content: " ";
-  display: block;
-  background: #fff;
-  position: absolute;
-  z-index: 30;
-}
-
 .example_back {
   position: relative;
   width: 90%;
@@ -458,6 +405,66 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  transition: all 0.2s ease-out;
+  /* transition: all 0.1s ease-out; */
 }
 
+.example_range {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  left: -1px;
+  width: calc(100% + 2px);
+  cursor: pointer;
+  /* -webkit-appearance: slider-horizontal !important; */
+  -moz-appearance: none;
+  opacity: 0;
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
+.ex_handle {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+  transition: background 0.3s, box-shadow 0.3s, opacity 0.5s 0.25s;
+  box-sizing: border-box;
+}
+
+.ex_handle::before {
+  left: 10px;
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  transform-origin: 0 0;
+}
+
+.ex_handle::after {
+  right: 0;
+  transform: rotate(135deg);
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  transform-origin: 0 0;
+}
