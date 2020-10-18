@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e56841da655c1460575784f4369f15d5",
+    "revision": "5f6ef1dc03da43e500a29c9546daeca0",
     "url": "/retush_new/index.html"
   },
   {
-    "revision": "b5949b93c23ba3178817",
-    "url": "/retush_new/static/css/main.45b31b31.chunk.css"
+    "revision": "af2b85d97c175e1cbbfa",
+    "url": "/retush_new/static/css/main.a6a79170.chunk.css"
   },
   {
     "revision": "6ef39cf62f9a2a6c439f",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/retush_new/static/js/2.ce1602ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5949b93c23ba3178817",
-    "url": "/retush_new/static/js/main.8961f868.chunk.js"
+    "revision": "af2b85d97c175e1cbbfa",
+    "url": "/retush_new/static/js/main.d120a940.chunk.js"
   },
   {
     "revision": "690fe1b028d635b1749a",
     "url": "/retush_new/static/js/runtime-main.459e56ce.js"
+  },
+  {
+    "revision": "114fe86dc08b875368b04efa7a052963",
+    "url": "/retush_new/static/media/HTN1.114fe86d.jpg"
   },
   {
     "revision": "da58c9d24b51eb301bb1af792fd2a287",
@@ -38,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b42c3bff320c4e1d74e1fbc0652a5d7d",
     "url": "/retush_new/static/media/gold-texture.b42c3bff.jpg"
-  },
-  {
-    "revision": "534885933f87fcdeec7aaddda83fd5e2",
-    "url": "/retush_new/static/media/how-to-background.53488593.jpg"
   },
   {
     "revision": "f207b85f2de45122e04142bf4a843b14",
