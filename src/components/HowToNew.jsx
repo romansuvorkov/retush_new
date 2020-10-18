@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function HowTo() {
+function HowToNew() {
 
     const [activeHowToCard, setActiveSlide] = useState(1);
 
@@ -17,8 +17,9 @@ function HowTo() {
     }
 
     return (
-        <div className="how_to_wraper">
-            <div className={activeHowToCard === 1 ? "how_to_card how_to_card_active" : "how_to_card display_none"}>
+        // <div className="how_to_page">
+            <div className="how_to_wraper">
+            <div className={activeHowToCard === 1 ? "how_to_card how_to_card_active" : `how_to_card ${activeHowToCard > 1 ? "how_to_move_left" : ""}`}>
                 <div className="text">
                     <h3 className="instructions_card_header">Подготовить фотографию</h3>
                     <div className="instructions_card_text_wrapper">
@@ -34,7 +35,7 @@ function HowTo() {
                     </div>
                 </div>
             </div>
-            <div className={activeHowToCard === 2 ? "how_to_card how_to_card_active" : "how_to_card display_none"}>
+            <div className={activeHowToCard === 2 ? "how_to_card how_to_card_active" : `how_to_card ${activeHowToCard > 2 ? "how_to_move_left" : ""} ${activeHowToCard < 2 ? "how_to_move_right" : ""} `}>
                 <div className="text">
                 <h3 className="instructions_card_header">Подробно описать заказ</h3>
                 <div className="instructions_card_text_wrapper">
@@ -44,7 +45,7 @@ function HowTo() {
                 </div>
                 </div>
             </div>
-            <div className={activeHowToCard === 3 ? "how_to_card how_to_card_active" : "how_to_card display_none"}>
+            <div className={activeHowToCard === 3 ? "how_to_card how_to_card_active" : "how_to_card how_to_move_right"}>
                 <div className="text">
                 <h3 className="instructions_card_header">Отправить заявку</h3>
                 <div className="instructions_card_text_wrapper">
@@ -57,7 +58,8 @@ function HowTo() {
                 <div className="how_to_right" onClick={() => handleClick(1)}>&#10095;</div>
             </div>
         </div>
+        // </div>
     );
 }
 
-export default HowTo;
+export default HowToNew;

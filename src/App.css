@@ -258,21 +258,35 @@ body {
   transform: translateY(30vh) translateX(-30%);
 }
 
+.how_to_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/HTN1.jpg);
+  background-size: contain;
+}
+
 .how_to_wraper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90%;
   height: 100vh;
-  background-image: url(./img/how-to-background.jpg);
+  /* background-image: url(./img/how-to-background.jpg); */
+  background-image: url(./img/HTN1.jpg);
   background-size: contain;
   position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .how_to_card {
-  position: relative;
-  width: 250px;
-  height: 400px;
+  position: absolute;
+  width: 90%;
+  height: 90%;
 /*   background-color: red; */
   box-shadow: 
   /* top shadow */
@@ -293,6 +307,17 @@ body {
   ;
   animation-duration: 2s;
   animation-name: appear;
+  background-image: url(./img/HTN1.jpg);
+  transition: all 1s ease-out;
+  left: 5%;
+}
+
+.how_to_move_right {
+  left: 100%;
+}
+
+.how_to_move_left {
+  left: -100%;
 }
 
 .text {
@@ -319,7 +344,7 @@ body {
 }
 
 .how_to_left {
-  width: 10%;
+  width: 5%;
   /* border: 1px solid red; */
   position: absolute;
   top: 0;
@@ -334,7 +359,7 @@ body {
 
 .how_to_right {
   /* border: 1px solid green; */
-  width: 10%;
+  width: 5%;
   position: absolute;
   top: 0;
   right: 0;
@@ -345,9 +370,9 @@ body {
   box-sizing: border-box;
 }
 
-.display_none {
+/* .display_none {
   display: none;
-}
+} */
 
 @keyframes appear {
   0% {
