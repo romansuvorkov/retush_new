@@ -5,16 +5,15 @@ import ExampleImage from './ExampleImage';
 
 function Examples() {
 
-    const [activeMoving, setActiveMoving] = useState(false);
-        return (
-            <div className="examples_wraper">
-                <h2>Примеры работ</h2>
-                <div className="examples_container">
-                    <ExampleImage />
-                </div>    
-            </div>
+    return (
+        <div className="examples_wraper">
+            <h2>Примеры работ</h2>
+            <div className="examples_container">
+                <ExampleImage />
+            </div>    
+        </div>
 
-        );
+    );
 }
 
 export default Examples;
